@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afro.BA - O seu portal de notícias</title>
+    <style>
+        /* Estilos Básicos */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f7f7f7; color: #333; line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        
+        /* Cabeçalho e Navegação */
+        header { background-color: #1a1a1a; color: #f4c20d; padding: 20px 0; text-align: center; }
+        header h1 { font-size: 2.5rem; letter-spacing: 2px; }
+        nav { background-color: #333; padding: 15px; display: flex; justify-content: center; gap: 20px; }
+        nav a { color: #fff; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; transition: color 0.3s; }
+        nav a:hover { color: #f4c20d; }
+
+        /* Layout Principal */
+        .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
+        
+        /* Cartões de Notícia */
+        .card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        .card img { width: 100%; height: auto; border-radius: 4px; margin-bottom: 15px; }
+        .card h2 { font-size: 1.5rem; margin-bottom: 10px; color: #1a1a1a; }
+        .card p { color: #666; margin-bottom: 15px; }
+        .leia-mais { display: inline-block; background: #f4c20d; color: #1a1a1a; padding: 8px 15px; font-weight: bold; border-radius: 4px; }
+        
+        /* Destaque Principal */
+        .destaque h2 { font-size: 2rem; }
+        
+        /* Barra Lateral */
+        .sidebar h3 { border-bottom: 2px solid #f4c20d; padding-bottom: 10px; margin-bottom: 20px; }
+        .sidebar ul { list-style: none; }
+        .sidebar li { margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .sidebar li a { font-weight: bold; color: #333; }
+        .sidebar li a:hover { color: #f4c20d; }
+
+        /* Rodapé */
+        footer { background-color: #1a1a1a; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+
+        /* Responsividade para Celulares */
+        @media (max-width: 768px) {
+            .container { grid-template-columns: 1fr; }
+            nav { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AFRO.BA</h1>
+        <p>A voz e a cultura da nossa gente</p>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Cultura</a>
+        <a href="#">Política</a>
+        <a href="#">Empreendedorismo</a>
+        <a href="#">Eventos</a>
+    </nav>
+
+    <div class="container">
+        <main>
+            <article class="card destaque">
+                <img src="https://via.placeholder.com/800x400" alt="Imagem da notícia principal">
+                <h2>Festival de Cultura Afro-Brasileira agita o final de semana em Salvador</h2>
+                <p>O evento reúne artistas locais, culinária típica e debates sobre o impacto da cultura afro no desenvolvimento do estado...</p>
+                <a href="#" class="leia-mais">Ler artigo completo</a>
+            </article>
+
+            <article class="card">
+                <h2>Novos editais de apoio a empreendedores negros são lançados</h2>
+                <p>Governo anuncia investimento de R$ 5 milhões para pequenos negócios liderados por pessoas negras na Bahia.</p>
+                <a href="#" class="leia-mais">Ler mais</a>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <div class="card">
+                <h3>Últimas Notícias</h3>
+                <ul>
+                    <li><a href="#">Exposição no Pelourinho resgata história de líderes quilombolas.</a></li>
+                    <li><a href="#">Artigo: A importância da representatividade na mídia local.</a></li>
+                    <li><a href="#">Inscrições abertas para oficina gratuita de percussão.</a></li>
+                    <li><a href="#">Moda Afro: Conheça os estilistas baianos que estão ganhando o mundo.</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Assine nossa Newsletter</h3>
+                <p style="font-size: 0.9rem; margin-bottom: 10px;">Receba as novidades do Afro.BA direto no seu e-mail.</p>
+                <input type="email" placeholder="Seu melhor e-mail" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                <button style="width: 100%; padding: 10px; background: #1a1a1a; color: #f4c20d; border: none; font-weight: bold; border-radius: 4px; cursor: pointer;">Inscrever-se</button>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Portal Afro.BA. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
